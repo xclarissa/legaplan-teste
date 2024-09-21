@@ -1,3 +1,4 @@
-export interface ToDoProps {
-  task: string;
+export interface Task {
+  id: number;
+  label: string;
 }

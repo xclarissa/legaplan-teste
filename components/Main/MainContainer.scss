@@ -1,56 +1,94 @@
+
 .container {
-  display: flex;     
-  flex-direction: column;  
-  align-items: center;      
-  justify-content: center;    
-  height: 100vh;               
-  text-align: center;      
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 40px;
 
-  p {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
-
-  &-box {
-    display: flex;  
-    width: 450px;
+  .container-box {
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
     height: 446px;
-    justify-content: center;    
-    align-items: center; 
-    flex-direction: column;  
-    background-color: red;
-    border: 1px;
+    padding: 20px;
+    border: 1px solid #EAECF0;
     border-radius: 16px;
-    color: #0000008A;
-    padding: 32px;
-    gap: 24px;
+    background-color: #FFFFFF;
   }
 
   .container-items {
-    list-style-type: none;     
-    padding: 0;       
-             
-    .checklist-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 386px;
-      padding: 8px;
-      border-bottom: 1px solid #ccc;
-      border-style: dashed;
+    list-style-type: none;
+    padding: 0;
+  }
 
-      input[type="checkbox"] {
-        margin-right: 10px;
-      }
+  .checklist-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border: 1px solid #D7DDE9;
+    border-style: dashed;
+    margin: 24px 32px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 
-      .delete-button {
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: #0000008A;
-        font-size: 16px;
-      }
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #D7DDE9;
+      border-radius: 4px;
+      margin-right: 10px;
+      cursor: pointer;       
+    }
+
+    input[type="checkbox"]:checked + label {
+      text-decoration: line-through;
+      color: #0000008A;
+    }
+
+    label {
+      flex-grow: 1;
+      text-align: left;
+      color: #000;
+    }
+
+    .delete-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #B0BBD1;
+      font-size: 16px;
+    }
+
+    &:hover {
+      background-color: #F7F9FD;
+    }
+  }
+
+  .add-new-task {
+    background: linear-gradient(90deg, rgba(7,150,211,1) 7%, rgba(83,192,240,1) 49%);
+    width: 450px;
+    height: 51px;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+
+  
+  @media (min-width: 320px) and (max-width: 425px)  {
+    max-height: 600px;
+
+    .container-box {
+      padding: 32px;
+    }
+
+    .add-new-task {
+      width: 272px;
+      height: 51px;
     }
   }
 }

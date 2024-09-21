@@ -1,14 +1,5 @@
-"use client"
+import Home from "./home-page";
 
-import { Header } from "@/components/Header";
-import { MainContainer } from "@/components/Main";
-
-export default function Home() {
-
-  return (
-    <main>
-      <Header user="Clarissa" />
-      <MainContainer />
-    </main>
-  );
+export default async function Page() {
+  return <Home />;
 }
