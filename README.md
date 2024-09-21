@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# To do app
 
-## Getting Started
+<p align="center"> 
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#fire-como-rodar-em-sua-maquina">Como Rodar</a>
+</p>
 
-First, run the development server:
+---
+ 
+## :rocket: Tecnologias
+Tecnologias utilizadas para desenvolver o projeto:
 
+- [Next.js](https://nextjs.org)
+- [Typescript](https://www.typescriptlang.org/)
+- [SCSS](https://sass-lang.com/)
+
+---
+
+## :fire: Como rodar em sua maquina
+
+### Você precisa já ter instalado <img src="https://4.bp.blogspot.com/-7eg7Qz3UeWM/UTioF3nxNGI/AAAAAAAAPZk/7H509R6acZU/s1600/gif+aviso.gif" width="40px">
+- [Git](https://git-scm.com/)
+- [NodeJS](https://nodejs.org/en/)
+- Package manager ([NPM](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/))
+
+No seu terminal:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Abra um terminal e copie este repositório com o comando
+$ git clone https://github.com/xclarissa/legaplan-teste.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Acesse a pasta do projeto no prompt de comando 
+$ cd legaplan-teste
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Instale as dependências
+$ npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Rode a aplicação
+$ npm run dev
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Acesso local ao ambiente de produção: 
