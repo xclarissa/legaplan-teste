@@ -37,4 +37,5 @@ $ npm install
 # Rode a aplicação
 $ npm run dev
 
-# Acesso local ao ambiente de produção: 
+# Acesso local ao ambiente de produção:
+https://legaplan-teste-seven.vercel.app/
