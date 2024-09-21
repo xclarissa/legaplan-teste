@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 24px;
+  height: 66px; 
+  color: #101828;
+ 
+  &-logo > a {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  &-welcome {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  &-date {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.navbar-line {
+  height: 1px;
+  border: none;
+  background-color: #D7DDE9;
+  margin: 0 20px;
+}
