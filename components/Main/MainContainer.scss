@@ -1,12 +1,56 @@
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  padding: 32px;
-  width: 450px;
-  height: 446px; 
-  border: 1px;
-  color: #EAECF0;
-  background-color: blueviolet;
+  display: flex;     
+  flex-direction: column;  
+  align-items: center;      
+  justify-content: center;    
+  height: 100vh;               
+  text-align: center;      
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  &-box {
+    display: flex;  
+    width: 450px;
+    height: 446px;
+    justify-content: center;    
+    align-items: center; 
+    flex-direction: column;  
+    background-color: red;
+    border: 1px;
+    border-radius: 16px;
+    color: #0000008A;
+    padding: 32px;
+    gap: 24px;
+  }
+
+  .container-items {
+    list-style-type: none;     
+    padding: 0;       
+             
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 386px;
+      padding: 8px;
+      border-bottom: 1px solid #ccc;
+      border-style: dashed;
+
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+
+      .delete-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #0000008A;
+        font-size: 16px;
+      }
+    }
+  }
 }
